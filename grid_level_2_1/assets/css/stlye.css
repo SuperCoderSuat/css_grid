@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap: 5px;
+}
+
+.container {
+    position: relative;
+    height: 400px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:nth-of-type(1) {
+    background-image: url("https://picsum.photos/800/800?2");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container:nth-of-type(2) {
+    background-image: url("https://picsum.photos/800/800?4");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container:nth-of-type(3) {
+    background-image: url("https://picsum.photos/800/800?5");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container:nth-of-type(4) {
+    background-image: url("https://picsum.photos/800/800?6");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container:nth-of-type(5) {
+    background-image: url("https://picsum.photos/800/800?7");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container:nth-of-type(6) {
+    background-image: url("https://picsum.photos/800/800?8");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container:nth-of-type(7) {
+    background-image: url("https://picsum.photos/800/800?9");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container:nth-of-type(8) {
+    background-image: url("https://picsum.photos/800/800?10");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container:nth-of-type(9) {
+    background-image: url("https://picsum.photos/800/800?11");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
